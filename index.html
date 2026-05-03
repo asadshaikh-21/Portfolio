@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asad Shaikh — Full Stack & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">AS<span class="dot">.</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="Asad_Shaikh_Resume.pdf" target="_blank" class="btn-resume">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
+  <span>View Resume</span>
+</a>
+    </div>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- Hero -->
+ <!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Available for internships
+    </div>
+
+    <h1 class="hero-title">
+      <span class="line-1">Asad</span>
+      <span class="line-2"><em>Shaikh</em></span>
+    </h1>
+
+    <div class="hero-subtitle">
+      <span class="typed-text" id="typedText"></span>
+      <span class="cursor-blink">|</span>
+    </div>
+
+    <p class="hero-desc">
+      Third-year IT student building <strong>full-stack products</strong> with <strong>AI at the core.</strong>
+      Previously at IBM & Infosys. 3 deployed projects. Pune, India.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        <span>View My Work</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="https://github.com/asadshaikh-21" target="_blank" class="btn-ghost">GitHub ↗</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Deployed Projects</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">2</span>
+        <span class="stat-label">Internships</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">8.0</span>
+        <span class="stat-label">CGPA</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">120+</span>
+        <span class="stat-label">DSA Problems</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Photo OUTSIDE hero-content -->
+  <div class="hero-photo-wrapper">
+    <div class="hero-photo-bg"></div>
+    <img src="PHOTO_ASAD_SHAIKH.png" alt="Asad Shaikh" class="hero-photo" />
+    <div class="hero-photo-tag">
+      <span class="badge-dot"></span>
+      Available for hire
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>scroll</span>
+  </div>
+
+</section>
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">01</span>
+        <span class="label-text">About Me</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title">
+            I build things that<br/>
+            <em>actually work.</em>
+          </h2>
+          <p class="about-text">
+            I'm a Full Stack Developer and AI enthusiast in my third year at SPPU Pune. 
+            I don't just study technology — I ship it. From adaptive learning platforms to 
+            real-time AI transcription tools, every project I build solves a real problem.
+          </p>
+          <p class="about-text">
+            I've had the privilege of working with <strong>IBM</strong> on cloud-based AI pipelines 
+            and <strong>Infosys</strong> on NLP-powered assessment systems. Now I'm looking for 
+            my next challenge.
+          </p>
+          <div class="about-links">
+            <a href="https://linkedin.com/in/asad-shaikh-9677522a2" target="_blank" class="about-link">
+              LinkedIn ↗
+            </a>
+            <a href="https://github.com/asadshaikh-21" target="_blank" class="about-link">
+              GitHub ↗
+            </a>
+            <a href="mailto:shaikhasadimam@gmail.com" class="about-link">
+              Email ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Frontend</h4>
+              <div class="skill-tags">
+                <span>React.js</span><span>Next.js</span><span>JavaScript</span><span>TypeScript</span><span>Tailwind CSS</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Backend</h4>
+              <div class="skill-tags">
+                <span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>JWT</span><span>Python</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Database</h4>
+              <div class="skill-tags">
+                <span>MongoDB</span><span>PostgreSQL</span><span>Mongoose</span><span>SQL</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>AI / ML</h4>
+              <div class="skill-tags">
+                <span>Gemini API</span><span>TensorFlow</span><span>NLP</span><span>IBM Watson</span><span>Deep Learning</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Tools</h4>
+              <div class="skill-tags">
+                <span>Git</span><span>Postman</span><span>Railway</span><span>Vercel</span><span>Render</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span class="label-text">Projects</span>
+      </div>
+
+      <h2 class="section-title">Things I've <em>shipped.</em></h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card featured">
+          <div class="project-top">
+            <div class="project-num">01</div>
+            <div class="project-links">
+              <a href="https://smart-quizer-ai.vercel.app/login" target="_blank" title="Live Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://github.com/asadshaikh-21" target="_blank" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-tag">Featured</div>
+          <h3 class="project-title">Smart Quizzer</h3>
+          <p class="project-subtitle">AI-Based Adaptive Learning System</p>
+          <p class="project-desc">
+            AI-powered quiz platform that dynamically adjusts content based on user performance. 
+            Built NLP-based question generation aligned with Bloom's Taxonomy, cutting content 
+            repetition by 40% and improving learning efficiency by 30%.
+          </p>
+          <div class="project-tech">
+            <span>MERN Stack</span>
+            <span>Gemini API</span>
+            <span>NLP</span>
+            <span>Vercel</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-num">40%</span>
+              <span class="metric-label">Less repetition</span>
+            </div>
+            <div class="metric">
+              <span class="metric-num">30%</span>
+              <span class="metric-label">Better efficiency</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-num">02</div>
+            <div class="project-links">
+              <a href="https://audio-transcriber-production-05e9.up.railway.app/login" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://github.com/asadshaikh-21" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Audio Transcriber</h3>
+          <p class="project-subtitle">AI-Powered Transcription Platform</p>
+          <p class="project-desc">
+            Full-stack transcription platform using Next.js, PostgreSQL, and Gemini 2.5 Flash API. 
+            Features drag-and-drop upload, real-time transcription feedback, and transcript history dashboard.
+          </p>
+          <div class="project-tech">
+            <span>Next.js</span>
+            <span>PostgreSQL</span>
+            <span>Gemini API</span>
+            <span>Railway</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-num">03</div>
+            <div class="project-links">
+              <a href="https://wonderlust-ui93.onrender.com/" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <a href="https://github.com/asadshaikh-21" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">WonderLust</h3>
+          <p class="project-subtitle">Airbnb-Style Property Platform</p>
+          <p class="project-desc">
+            Full-stack property listing platform with MVC architecture, Passport.js authentication, 
+            Cloudinary image uploads, and OpenStreetMap Leaflet.js for interactive geolocation.
+          </p>
+          <div class="project-tech">
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Cloudinary</span>
+            <span>Leaflet.js</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">03</span>
+        <span class="label-text">Experience</span>
+      </div>
+
+      <h2 class="section-title">Where I've <em>worked.</em></h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">AI Intern</h3>
+                <span class="timeline-company">Infosys</span>
+              </div>
+              <span class="timeline-date">Sep 2025 – Dec 2025</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Developed NLP-based automated question generation system improving relevance for adaptive assessment platforms</li>
+              <li>Implemented context-aware text processing and dynamic content generation algorithms</li>
+              <li>Designed adaptive difficulty mechanisms based on user performance metrics</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>NLP</span><span>Python</span><span>ML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">AI Intern</h3>
+                <span class="timeline-company">IBM</span>
+              </div>
+              <span class="timeline-date">Jun 2025 – Aug 2025</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Developed and trained ML models using TensorFlow on IBM Cloud for structured data analysis</li>
+              <li>Integrated IBM Watson APIs for NLP and Computer Vision solutions</li>
+              <li>Designed and deployed cloud-based AI pipelines for model evaluation and optimization</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>TensorFlow</span><span>IBM Cloud</span><span>Watson</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs-section">
+        <h3 class="certs-title">Certifications & Achievements</h3>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <span class="cert-icon">🏆</span>
+            <p>Develop Gen AI Apps with Gemini & Streamlit — Google</p>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">🎯</span>
+            <p>Artificial Intelligence — Infosys</p>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">🧠</span>
+            <p>Deep Learning for Developers — Infosys</p>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">🔐</span>
+            <p>Deloitte — Cybersecurity & Data Forensics</p>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">📊</span>
+            <p>Tata Group — ESG Analysis & Data Visualization</p>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">💻</span>
+            <p>GDG Pune — Core Tech Team Member</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">04</span>
+        <span class="label-text">Contact</span>
+      </div>
+
+      <div class="contact-inner">
+        <h2 class="contact-title">
+          Let's build something<br/>
+          <em>amazing together.</em>
+        </h2>
+        <p class="contact-desc">
+          I'm actively looking for internship opportunities in Full Stack + AI development. 
+          If you think I'd be a great fit for your team, let's talk!
+        </p>
+
+        <a href="mailto:shaikhasadimam@gmail.com" class="contact-btn">
+          <span>shaikhasadimam@gmail.com</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <div class="contact-links">
+          <a href="https://linkedin.com/in/asad-shaikh-9677522a2" target="_blank">LinkedIn</a>
+          <span>·</span>
+          <a href="https://github.com/asadshaikh-21" target="_blank">GitHub</a>
+          <span>·</span>
+          <a href="https://leetcode.com/shaikh_asad21" target="_blank">LeetCode</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">AS<span class="dot">.</span></span>
+        <p>Designed & Built by Asad Shaikh © 2026</p>
+        <p class="footer-stack">Next.js · Tailwind · Deployed on Vercel</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
